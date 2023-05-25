@@ -51,3 +51,220 @@ table {
 
 
 /* Write your css below here */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 20vh;
+    width: 100vw;
+    background-color: purple;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas:
+        "left centre right";
+}
+
+header {
+    background-color: #387acb;
+    width: 100%;
+}
+
+header img {
+    height: 70px;
+}
+
+
+ .left {
+    grid-area: left;
+}
+.centre{
+    grid-area: centre;
+    font-size: 30px;
+    padding: 25px;
+}
+ .right {
+    grid-area: right;
+    padding: 70px;
+    font-size: 40px;
+   
+}
+
+nav a {
+    
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #313133;
+    justify-items: right;
+    justify-items: right;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+section {
+    grid-area: section;
+    background: white;
+    width: 95vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    background-color:white
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-image {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(212, 200, 214)
+}
+
+.product-image img {
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+
+
+.product-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-details p {
+    font-size: 12px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+button.order {
+    background-color:orchid;
+    align-self: center;
+    color: #fff;
+    border: none;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+.product-image img:hover {
+	transform: scale(1.1);	
+}
+
+button.check {
+    width: 300px;
+}
+
+.check {
+    grid-area: check;
+}
+
+footer {
+    grid-area: foot;
+    background: #313133;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2,
+h3 {
+    margin-top: 10px;
+}
+
+.product-details h3:last-child {
+    margin-top: 5px;
+}
+
+a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+header img:hover {
+    transform: rotate(0.9turn);
+}
+
+
+
+header.left {
+    display: none;
+}
+
+@media screen and (width <=480px) {
+    header {
+    }
+
+    header nav a{
+        display: none;
+    }
+
+    .left h2{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+}
+
+@media screen and (width >=481px){
+    .right span{
+        display: inline block;
+    }
+    
+
+}
+
+@media screen and (width >=768px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    header nav a {
+        font-size: large;
+    }
+}
+
+@media screen and (width >=1024px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (width >=1440px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
