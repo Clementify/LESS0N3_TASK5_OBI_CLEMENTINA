@@ -81,12 +81,12 @@ header img {
 }
 .centre{
     grid-area: centre;
-    font-size: 30px;
+    font-size: 20px;
     padding: 25px;
 }
  .right {
     grid-area: right;
-    padding: 70px;
+    padding: 60px;
     font-size: 40px;
    
 }
