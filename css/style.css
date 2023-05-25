@@ -203,9 +203,6 @@ h3 {
     margin-top: 10px;
 }
 
-.product-details h3:last-child {
-    margin-top: 5px;
-}
 
 a:hover {
     color: #007bff;
