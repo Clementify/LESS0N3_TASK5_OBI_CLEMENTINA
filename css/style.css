@@ -117,7 +117,7 @@ section {
     margin-top: 10px;
     margin-bottom: 30px;
     display: grid;
-    background-color:white
+    background-color:white;
     padding: 20px;
     grid-template-columns: 1fr;
     grid-gap: 20px 0;
@@ -220,8 +220,7 @@ header.left {
 }
 
 @media screen and (width <=480px) {
-    header {
-    }
+    
 
     header nav a{
         display: none;
